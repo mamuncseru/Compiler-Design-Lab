@@ -93,7 +93,7 @@ int main(){
 
     string str;
 
-    freopen("detector.cpp","r",stdin);
+    //freopen("detector.cpp","r",stdin);
 
     while(cin>>str){
         cout<<str<<" ";

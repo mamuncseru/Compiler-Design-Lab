@@ -67,14 +67,21 @@ void first(int n){
     }
 }
 
+bool mr[MX];
+
 void print(int n){
     int i,j;
+    char ch;
     for(i=0;i<n;i++){
+        memset(mr,0,sizeof mr);
         cout<<str[i][0]<<" = { ";
         for(j=0;j<vc[i].size();j++){
-            if(j+1!=vc[i].size())cout<<vc[i][j]<<" , ";
-            else cout<<vc[i][j]<<" }\n";
+            ch = vc[i][j];
+            if(j+1!=vc[i].size()&&!mr[ch]) cout<<ch<<" , ";
+            else if(!mr[i]) cout<<ch;
+            mr[ch]=1;
         }
+        cout<<" }\n";
     }
 }
 

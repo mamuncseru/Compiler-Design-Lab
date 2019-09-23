@@ -10,7 +10,7 @@ int main(){
     int i,j,k,l,m,n;
     char ch;
     //cin>>str;
-    str = "(A-B)*(D/E)";//"A*(B+C*D)+E";
+    str = "A+(B*C-(D/E^F)*G)*H";//"(A-B)*(D/E)";//"A*(B+C*D)+E";
     str = "(" + str + ")";
     ans = "";
     for(i=0;i<str.size();i++){

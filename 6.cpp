@@ -32,11 +32,11 @@ bool isValid(char str[]){
 
 int main(){
     char str[1000];
-    cin>>str;
+    //cin>>str;
     //strcpy(str,"0011");
 
     if(isOther(str)){
-        puts("Undefined");
+        puts("Undefined1");
     }
     else if(str[0]=='c'&&str[1]=='h'&&str[2]=='_'&&isValid(str)){
         puts("Character Variable");
